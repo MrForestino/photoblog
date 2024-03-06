@@ -6,6 +6,11 @@
 	/* --font-family: "Playfair Display", sans-serif;
   --second-family: "Ubuntu", sans-serif; */
 }
+.container{
+	width: 905px;
+	margin:0 auto;
+	outline:3px solid tomato;
+}
 body{
 	font-family:  "Playfair Display", sans-serif;
 	font-weight: 400;
@@ -40,15 +45,19 @@ body{
 	font-size: 30px;
 	/* color: var(--color-main) ; */
 }
-.gallery-text{
+.gallery-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+/* .gallery-text{
 	/* font-family:  "Playfair Display", sans-serif; */
 	/* font-weight: 400; */
 	/* font-size: 14px; */
-	/* color: var(--color-main) ; */
-}
-.gallery-button{
+	/* color: var(--color-main) ;
+} */
+/* .gallery-button{
 	/* font-family:  "Playfair Display", sans-serif; */
 	/* font-weight: 400; */
 	/* font-size: 14px; */
-	/* color: var(--color-main) ; */
-}
+	/* color: var(--color-main) ;
+} */
