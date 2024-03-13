@@ -1,3 +1,8 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 :root{
 	--color-main:#626262;
 	--color-link:#7D7D7D7D;
@@ -6,8 +11,12 @@
 	/* --font-family: "Playfair Display", sans-serif;
   --second-family: "Ubuntu", sans-serif; */
 }
+li{
+	list-style: none;
+}
 .container{
 	width: 905px;
+
 	margin:0 auto;
 	outline:3px solid tomato;
 }
@@ -31,13 +40,16 @@ body{
 	/* font-size: 14px; */
 	color: var(--color-hover) ;
 }
-
+.gallery-image{
+	width: 100%;
+}
 .gallery-link{
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 300;
 	/* font-size:14px; */
 	color: var(--color-card-link);
 	text-decoration: none;
+	display:block;
 }
 .gallery-list-title{
 	/* font-family:  "Playfair Display", sans-serif; */
@@ -48,16 +60,25 @@ body{
 .gallery-list{
 	display: flex;
 	flex-wrap: wrap;
+	column-gap: 65px;
+	row-gap: 130px;
+		/* justify-content: space-between;*/ 
 }
-/* .gallery-text{
-	/* font-family:  "Playfair Display", sans-serif; */
-	/* font-weight: 400; */
-	/* font-size: 14px; */
-	/* color: var(--color-main) ;
-} */
-/* .gallery-button{
-	/* font-family:  "Playfair Display", sans-serif; */
-	/* font-weight: 400; */
-	/* font-size: 14px; */
-	/* color: var(--color-main) ;
-} */
+.gallery-item{
+	flex-basis: calc((100% - 65px) / 2);
+	/* width:420px; */
+}
+.gallery-text{
+	font-family:  "Playfair Display", sans-serif;
+	 font-weight: 400; 
+	 color: var(--color-main) ;
+	 font-size: 14px;
+}
+ .gallery-button{
+	 font-family:  "Playfair Display", sans-serif;
+	 font-weight: 400; 
+	 font-size: 14px; 
+	 color: var(--color-main) ;
+	 margin: 0 auto;
+	 display: block;
+} 
